@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Real Estate</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Real Estate Profile</h1>
+        </header>
+        
+        <div class="profile-section">
+            <div class="profile-info">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 id="user-name">John Doe</h2>
+                <p id="user-role">Consumer</p>
+            </div>
+
+            <div class="dashboard">
+                <div class="progress-section" id="consumer-progress-section" style="display: none;">
+                    <h3>Progress of Committed Lands/Plots</h3>
+                    <div class="progress-container" id="consumer-progress-container">
+                        <!-- Dynamic progress bars will be appended here -->
+                    </div>
+                </div>
+
+                <div class="user-activity" id="consumer-activity" style="display: none;">
+                    <h3>User Activity</h3>
+                    <div class="activity-container">
+                        <div class="activity-item">
+                            <h4>Shortlisted Lands/Plots</h4>
+                            <ul id="shortlisted-properties" class="collapsible"></ul>
+                        </div>
+                        <div class="activity-item">
+                            <h4>Contacted Agents</h4>
+                            <ul id="agents-contacted" class="collapsible"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent-progress-section" id="agent-progress-section" style="display: none;">
+                    <h3>Client Activity</h3>
+                    <div class="activity-item">
+                        <h4>Clients Contacted</h4>
+                        <ul id="clients-contacted" class="collapsible"></ul>
+                    </div>
+                    <div class="activity-item">
+                        <h4>Clients' Progress</h4>
+                        <div class="progress-container" id="agent-progress-container">
+                            <!-- Dynamic progress bars will be appended here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seller-dashboard" id="seller-dashboard" style="display: none;">
+                <h3>Progress of Listed Properties</h3>
+                <div class="progress-container" id="seller-progress-container">
+                    <!-- Dynamic progress bars will be appended here -->
+                </div>
+            </div>
+
+            <button id="convert-seller" class="btn" style="display: none;" onclick="location.href='sell.html'">Convert to Seller</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - Buy Plots and Lands</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <header>
+        <h1>Real Estate Listings</h1>
+        <a href="website.html" class="logo" >
+        <img src="logo.png" alt="Brand Logo" class="brand-logo">
+        </a>
+    </header>
+    <main>
+        <div class="filters">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Location">
+            <label for="price">Max Price:</label>
+            <input type="number" id="price" placeholder="e.g. 300000">
+            <label for="area">Min Area:</label>
+            <input type="number" id="area" placeholder="e.g. 500">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="">All</option>
+                <option value="plot">Plot</option>
+                <option value="land">Land</option>
+            </select>
+            <button id="filter-btn">Filter</button>
+        </div>
+        <div class="container" id="plots-container">
+            <!-- Sample Plots -->
+            <div class="card">
+                <div class="image-section">
+                    <img src="plot1.jpg" alt="Plot Image" class="plot-img">
+                    <div class="location-and-actions">
+                        <p><strong>Location:</strong> Near Silicon Valley, California</p>
+                        <div class="actions">
+                            <button class="shortlist-btn">Shortlist</button>
+                            <button class="contact-btn">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h2>Beautiful Plot in California</h2>
+                    <p><strong>Location:</strong> California, USA</p>
+                    <p><strong>Area:</strong> 5000 sq.ft</p>
+                    <p><strong>Type:</strong> Plot</p>
+                    <p><strong>Price:</strong> $300,000</p>
+                </div>
+            </div>
+            <!-- Other plot cards go here -->
+        </div>
+    </main>
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Seller</h2>
+            <p>Please fill in the details or provide your existing information.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="buy.js"></script>
+</body>
+</html>

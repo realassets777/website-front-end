@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.faq .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #1e90ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #1c86ee;
+}
+
+.accordion-button::after {
+    content: '\002B';
+    float: right;
+    font-size: 20px;
+    color: white;
+}
+
+.accordion-button.active::after {
+    content: '\2212';
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: white;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
