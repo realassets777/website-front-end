@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Real Assets</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js" defer></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Real Assets</h1>
+            <a href="website.html">
+            <img src="logo.png" alt="Real Assets Logo" class="brand-logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="about-us">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to Real Assets, your number one source for all things in the real estate market. We're dedicated to providing you the very best of real estate services, with an emphasis on organization, simplicity, and accessibility.</p>
+                <p>Founded in [Year], Real Assets has come a long way from its beginnings. Our vision is to make the real estate market more organized, simplify the process of existing methods, and make it more accessible to everyone.</p>
+            </div>
+        </section>
+        <section class="vision">
+            <div class="container">
+                <h2>Our Vision</h2>
+                <p>To make the real estate market more organized, simplify the process of existing methods, and make it more accessible to everyone.</p>
+            </div>
+        </section>
+        <section class="contact-us" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or comments, please don't hesitate to contact us through any of the following means:</p>
+                <ul>
+                    <li>Email: <a href="mailto:info@realassets.com">info@realassets.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li>Office Address: 123 Real Assets Avenue, Suite 100, Real Estate City, RE 12345</li>
+                </ul>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Real Assets. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional Modal for Contact Form -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

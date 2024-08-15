@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Real Estate</title>
+    <link rel="stylesheet" href="profile.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Real Estate Profile</h1>
+        </header>
+        
+        <div class="profile-section">
+            <div class="profile-info">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 id="user-name">John Doe</h2>
+                <p id="user-role">Consumer</p>
+            </div>
+
+            <div class="progress-section" id="consumer-progress-section" style="display: none;">
+                <h3>Progress of Committed Lands/Plots</h3>
+                <div class="progress-container" id="progress-container">
+                    <!-- Dynamic progress bars will be appended here -->
+                </div>
+            </div>
+
+            <div class="user-activity" id="consumer-activity" style="display: none;">
+                <h3>User Activity</h3>
+                <div class="activity-container">
+                    <div class="activity-item">
+                        <h4>Shortlisted Lands/Plots</h4>
+                        <ul id="shortlisted" class="collapsible">
+                            <li>Plot A - City Center</li>
+                            <li>Land B - Suburbs</li>
+                        </ul>
+                    </div>
+                    <div class="activity-item">
+                        <h4>Contacted Lands/Plots</h4>
+                        <ul id="contacted" class="collapsible">
+                            <li>Plot C - Riverside</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agent-activity" id="agent-activity" style="display: none;">
+                <h3>Client Activity</h3>
+                <div class="activity-item">
+                    <h4>Clients Contacted</h4>
+                    <ul id="clients-contacted" class="collapsible">
+                        <li>Client X</li>
+                        <li>Client Y</li>
+                    </ul>
+                </div>
+                <div class="activity-item">
+                    <h4>Clients' Progress</h4>
+                    <ul id="clients-progress" class="collapsible">
+                        <li>Client Z - Plot Progress</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

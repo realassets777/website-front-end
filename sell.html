@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Plots & Lands - Real Estate India</title>
+  <link rel="stylesheet" href="sell.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="website.html" class="logo"><img src="logo.png" alt="Real Estate"></a>
+      <h1>Real Estate</h1>
+      <p>Sell Plots & Lands with Ease</p>
+      <nav>
+        <a href="#register-section">Register</a>
+        <a href="#add-listing-section">Login & Add Listing</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="register-section">
+      <h2>Register as a Seller</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <section id="add-listing-section">
+      <h2>Add Plot/Land Listing (Login Required)</h2>
+      <p>Please login to submit a listing.</p>
+      <form id="listing-form">
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+          <label for="type">Type:</label>
+          <select id="type" name="type" required>
+            <option value="plot">Plot</option>
+            <option value="land">Land</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="area">Area (sq.ft):</label>
+          <input type="number" id="area" name="area" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price (₹):</label>
+          <input type="number" id="price" name="price" required>
+        </div>
+        <div class="form-group">
+          <label for="images">Images (multiple files allowed):</label>
+          <input type="file" id="images" name="images[]" multiple required>
+        </div>
+        <div class="form-group">
+          <label for="video">Video (optional):</label>
+          <input type="file" id="video" name="video">
+        </div>
+        <button type="submit">Submit Listing</button>
+      </form>
+    </section>
+  </main>
+  <script src="sell.js"></script>
+</body>
+</html>
